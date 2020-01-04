@@ -1,4 +1,4 @@
-<h1 align="center">my templatePrac</h1>
+<h1 align="center">my template</h1>
 
 ## description
 This is a repository to manage my docker template setting
