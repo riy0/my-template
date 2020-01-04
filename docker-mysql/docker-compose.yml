@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  db:
+    container_name: local-mysql
+    restart: always
+    image: mysql5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3306:3306
+    volumes:
+      - ./conf:/etc/mysql/conf.d
+      - ./logs:/var/lib/mysql
