@@ -1,3 +1,4 @@
+
 import moment from 'moment';
 import uuidv4 from 'uuid/v4';
 import db from '../db';
@@ -36,7 +37,8 @@ const User = {
       return res.status(400).send(error);
     }
   },
-  
+
+  /* Login */
   async login(req, res) {
     if (!req.body.email || !req.body.password) {
       return res.status(400).send({'message': 'Some values are missing'});
@@ -59,7 +61,7 @@ const User = {
       return res.status(400).send(error)
     }
   },
-
+  /* Delete A User */
   async delete(req, res) {
     const deleteQuery = 'DELETE FROM users WHERE id=$1 returning *';
     try {
