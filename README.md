@@ -1,8 +1,9 @@
 <h1 align="center">my template</h1>
 
 ## description
-This is a repository to manage my docker template setting
+This is a repository to manage my template setting
 
+### docker
 - dokcer rails
 - docker db
 - docker react & rails
